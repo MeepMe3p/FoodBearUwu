@@ -1,4 +1,5 @@
 <?php
+    var_dump($_POST);
     include "connection.php";
 ?>
 
@@ -30,22 +31,29 @@
                 <div class="input-group">
                     <div class="input-field" id = "emailField">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="text" id = "user" placeholder="Enter username">
+                        <input type="text" id = "user" placeholder="Enter username" name = "user">
                     </div>
-                    <div class="input-field" id = "passwordField">
+                    <div class="input-field" id = "pass_word">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" id = "pass" placeholder="Enter Password">
+                        <input type="password" id = "pass" placeholder="Enter Password" name = "pass">
                     </div>
                     <p>Forgot Password <a href="">Click Here</a></p>
                 </div>
                 <div class="btn-field">
                     <button id = "btn" value = "login" name = "submit">Login</button>
-                    <!-- <input type="submit" id = "btn" value = "login" name = "submit"> -->
                 </div>
             </form>
         </div>
 
     </div>
+    
+    <!-- <form action="login_logic.php" method="POST">
+        <p>Username</p>
+    <input type="text" name="user">
+    <p>Password</p>
+    <input type="password" name="pass">
+    <input type="submit" value="Submit" name="submit">
+</form> -->
     
     <footer>
         <p>Elijah Rei Sabay</p>
